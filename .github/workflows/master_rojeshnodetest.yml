@@ -11,7 +11,7 @@ on:
 
 jobs:
   build-and-deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@master
@@ -32,5 +32,5 @@ jobs:
       with:
         app-name: 'rojeshnodetest'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_213d462584aa4774b36df8b383e9d442 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_0c88278bb7514d2aaed9774853bde6ec }}
         package: .
